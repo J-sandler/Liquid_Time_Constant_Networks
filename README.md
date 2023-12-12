@@ -38,7 +38,7 @@ def forward(self, I, x_t):
 
 **Results:**
 
-- Initial Function [50 time steps]:
+- True Test Function [50 time steps]:
 <img width="560" alt="Screen Shot 2023-12-12 at 12 07 39 AM" src="https://github.com/J-sandler/Liquid_Time_Constant_Networks/assets/108235294/e9aa2aa7-b95c-40f1-9b82-827c15b24e8f">
 
 <br>
