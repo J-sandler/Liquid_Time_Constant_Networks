@@ -7,7 +7,7 @@ The test can be run with sine_test.py which will instantiate and train a single 
 
 The dependencies for running this repo are simply numpy and matplotlib.
 
-*Results*
+**Results:**
 
 
 *(This was produced in direct reference to the techniques referenced in [Liquid Time-constant Networks - Ramin Hasani, Mathias Lechner, Alexander Amini, Daniela Rus, Radu Grosu : (MIT) (IST Austria) (TU Wien)])*
