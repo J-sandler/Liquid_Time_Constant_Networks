@@ -7,6 +7,26 @@ and vanilla (BPTT) optimization. It is tested on a periodic (sine) function with
 
 - The dependencies for running this repo are simply numpy and matplotlib.
 
+
+**code**
+
+- LTC neurons operate as recurrent functions of input states and hidden states, whose dynamics
+  are specified by a trainable but uniform differential equation.
+
+- Computing a forward pass thus entails onfolding the differential eq, and at each ode step, computing
+  the gradient (dx/dt) by taking a function of the input I, the hidden state x(t), time constant tao, and
+  bias A.
+  
+- The following code illustrates this process in the simplest fashion possible:
+
+"""
+def forward(self, I, x_t):
+    for step in range(ode_steps):
+      y = F([I, x_t]) 
+      x_t = (x_t + (self.H*y*self.A))/(1 + self.H*(1/self.tao + y))
+    return x_t
+"""
+
 **Results:**
 
 - Initial Function [50 time steps]:
