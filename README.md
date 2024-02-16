@@ -1,4 +1,4 @@
-**Vanilla Liquid Time Constant Neural Network Implementation**
+**Vanilla Liquid Time Constant Neuron Implementation**
 
 - This is a simple illustration of Liquid Time Constant Networks or LTC's, [Hasani,Lechner,Amini-2020] using a vanilla ode solver, 
 and vanilla (BPTT) optimization. It is tested on a periodic (sine) function with 50 data points.
